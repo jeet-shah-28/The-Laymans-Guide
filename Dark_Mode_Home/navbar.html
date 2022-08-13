@@ -1,0 +1,192 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Work+Sans&display=swap" rel="stylesheet">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .navbar{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 0.5px solid lightgrey;
+        /* background-color: #afb8d3; */
+    }
+    .navbar2{
+        margin-top: 25px ;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #afb8d3; */
+    }
+    ul{
+        flex: 1;
+        text-align: right;
+    }
+    ul li{
+        list-style: none;
+        margin-left: auto;
+        display: inline-block;
+    }
+    ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0 10px;
+        position: relative;
+    }
+    ul li a::after{
+        content: '';
+        width: 0;
+        height: 5px;
+        background: #597cee;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25px;
+        border-radius: 20px;
+        transition: 0.5s;
+    }
+    ul li a:hover:after{
+        width: 100%;
+    }
+    .icons{
+        margin-left: auto;
+        border-left: 1px solid lightgray;
+    }
+    .icons img{
+        height: 25px;
+        margin-left: 55px;
+        cursor: pointer;
+        padding: 5px;
+        border: 0px solid lightgray;
+        border-radius: 50%;
+    }
+    .icons img:hover{
+        background-color: grey;
+    }
+    .info{
+        display: flex;
+        margin-left: auto;
+        margin-top: 90px;
+    }
+    .left, .right{
+        flex-basis: 50%;
+    }
+    .right img{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .left h1{
+        font-size: 100px;
+    }
+    .left h3{
+        font-size: 35px;
+    }
+    span{
+        color: #004aad;
+    }
+    .left p{
+        font-size: 24px;
+        margin: 50px 0;
+    }
+    .btn button{
+        padding: 7px 30px;
+        margin-right: 15px;
+        outline: none;
+        border: 1px solid #004aad;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #004aad;
+        background-color: transparent;
+    }
+    .btn .primary{
+        background: linear-gradient(#0072be,#004aad);
+        color: white;
+    }
+    .btn button:hover{
+        box-shadow: 0px 5px 15px rgb(0, 74, 173,0.4);
+    }
+    .btn{
+        margin-bottom: 50px;
+    }
+    .social{
+        width: 200px;
+        text-align: center;
+        position: relative;
+        margin-left: 160px;
+    }
+    .social img{
+        height: 20px;
+        margin: 0 5px;
+    }
+    .social::after{
+        content: '';
+        width: 150px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        left: -160px;
+        top: 10px;
+    }
+
+</style>
+</head>
+<body>    
+<!--  -->
+<div class="main">
+    <div class="navbar">
+        <img src="The Layman's Guide_dark.png" style="margin-left: 5px;" width="234.5" height="45.5">
+            <ul class="navbar2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Topics</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">About Us</a></li>
+                <div class="icons">
+                <li><img src="img/bell_darkmode.png"></li>
+                <li><img src="img/user_darkmode.png"></li>
+                <li><img src="img/settings_darkmode.png"></li>
+                </div>
+            </ul>
+    </div>
+    <div class="info">
+        <div class="left">
+            <h1>Wel<span>come</span></h1>
+            <h3>Ready to expand <span>your knowledge</span></h3>
+            <p>
+                The world is moving ahead<br>
+                Time to get into your brain shoes<br>
+                And Run with the world<br>
+            </p>
+            <div class="btn">
+                <button type="button" class="primary">Explore our website</button>
+                <button type="button">Sign Up</button>
+            </div>
+            <div class="social">
+                <img src="img/twitter_darkmode.png">
+                <img src="img/insta_darkmode.png">
+                <img src="img/pinterest_darkmode.png">
+                <img src="img/facebook_darkmode.png">
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <img src="bluishgreen_brain.png">
+        </div>
+    </div>
+</div>
+</body>
+</html>
